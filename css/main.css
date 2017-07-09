@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+.HeaderBar 
+{
+	height:36px;
+	line-height:36px;
+	background-color:#EFEFEF;
+	margin:0;
+	padding:0 80px;
+}
+
+.HeaderBar>a
+{
+	color:#F22E00;
+	font:12px/36px "宋体","Microsoft YaHei", "微软雅黑";
+	margin-right:0.5em;
+}
+.HeaderBar>a span {color:#6C6C6C;}
+
+.TopMenu
+{
+	height:36px;
+	line-height:36px;
+}
+.TopMenu li
+{
+	float:left;
+	border-right:1px dashed #DDDDDD;
+	position:relative;
+	margin-right:19px;
+}
+
+
+
+.TopMenu li table
+{
+	position:absolute;
+	top:36px;
+}
+.TopMenu li:hover table
+{
+	display:block;
+}
+
+	
+
