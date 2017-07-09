@@ -25,22 +25,32 @@
 .TopMenu li
 {
 	float:left;
-	border-right:1px dashed #DDDDDD;
+	width:86px;
+	text-align:center;
+}
+.TopMenu li a
+{
+	display:inline-block;
+	
+}
+.TopMenu li a i
+{
+	width:5px;
+	height:3px;
+	background:url(../icon/down.gif) left center no-repeat;
+	display:inline-block;
+	margin:9px;
 	position:relative;
-	margin-right:19px;
+	top:5px;
 }
 
-
-
-.TopMenu li table
+#ShopCar
 {
-	position:absolute;
-	top:36px;
+	background:url(../icon/ShopCar.gif)left center no-repeat;
 }
-.TopMenu li:hover table
-{
-	display:block;
-}
+#ShopCar a{padding-left:9px;}
+#ShopCar em{color:red; font-style:normal; font-weight:bold;}
+	
 
 	
 
