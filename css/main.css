@@ -50,7 +50,14 @@
 }
 #ShopCar a{padding-left:9px;}
 #ShopCar em{color:red; font-style:normal; font-weight:bold;}
-	
+#Guide_1 
+{
+	background:url(../icon/Guide_1.jpg) left center no-repeat;
+	overflow:hidden;
+	display:inline-block;
+	width:11px;
+	height:10px;
+}
 
 	
 
