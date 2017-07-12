@@ -1,7 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-body{background-color:#CF0;}
-/*HeaderBar*/
 .HeaderBar 
 {
 	height:36px;
@@ -9,7 +7,6 @@ body{background-color:#CF0;}
 	background-color:#EFEFEF;
 	margin:0;
 	padding:0 80px;
-	position:relative;
 }
 
 .HeaderBar>a
@@ -31,79 +28,36 @@ body{background-color:#CF0;}
 	width:86px;
 	text-align:center;
 }
-.TopMenu li:hover
+.TopMenu li a
 {
-	background-color:#FFF;
-	border:1px solid #707070;
-	border:none solid;
+	display:inline-block;
+	
 }
-.TopMenu li>a:hover
-{
-	color:#F33;
-	text-decoration:underline;
-	font-size:1.2em;
-}
-.TopMenu li i
+.TopMenu li a i
 {
 	width:5px;
 	height:3px;
 	background:url(../icon/down.gif) left center no-repeat;
 	display:inline-block;
-	margin:9px 3px ;
+	margin:9px;
 	position:relative;
 	top:5px;
 }
 
-#ShopCar a
+#ShopCar
 {
-	padding-left:15px;
 	background:url(../icon/ShopCar.gif)left center no-repeat;
 }
+#ShopCar a{padding-left:9px;}
 #ShopCar em{color:red; font-style:normal; font-weight:bold;}
-#Guide
-{
-	padding-left:7px;
-}
-
-#Guide>a
+#Guide_1 
 {
 	background:url(../icon/Guide_1.jpg) left center no-repeat;
-	padding-left: 13px;
-}
-
-/*下拉菜单*/
-
-#Guide div
-{
-	position:absolute;
-	top:36px;
-	left:73px;
-	background-color:#FFF;
-	height:220px;
-	text-align:left;
-
-}
-
-#Guide div a
-{
-	color:#656565;
-}
-	
-#Guide div dl
-{
+	overflow:hidden;
 	display:inline-block;
-	height:178px;
-	width:300px;
-	border-width:0 1px;
+	width:11px;
+	height:10px;
 }
-#Guide div dl dt
-{
-	color:#F00;
-	font-family:"宋体", "微软雅黑", serif;
-	font-weight:bold;
-	font-size:1.2em;
-}
-#Guide div dl dd a
-{
-	padding-right:10px;
-}
+
+	
+
