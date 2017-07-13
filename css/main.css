@@ -1,109 +1,195 @@
 @charset "utf-8";
 /* CSS Document */
-body{background-color:#CF0;}
-/*HeaderBar*/
-.HeaderBar 
+
+/*nav*/
+.nav
 {
-	height:36px;
-	line-height:36px;
-	background-color:#EFEFEF;
-	margin:0;
-	padding:0 80px;
-	position:relative;
+	z-index:1000;
+	width:100%;
+	background:#EFEFEF;
+	border-bottom:1px solid #eee;
 }
 
-.HeaderBar>a
+.nav .nav-bd
 {
-	color:#F22E00;
-	font:12px/36px "宋体","Microsoft YaHei", "微软雅黑";
-	margin-right:0.5em;
+	margin:0 auto;
+	width:1190px;
+	height:35px;
+	background-color:#f5f5f5;
 }
-.HeaderBar>a span {color:#6C6C6C;}
-
-.TopMenu
-{
-	height:36px;
-	line-height:36px;
-}
-.TopMenu li
+.nav .nav-bd .nav-bd-l
 {
 	float:left;
-	width:86px;
-	text-align:center;
 }
-.TopMenu li:hover
+.nav .nav-bd .nav-bd-r
 {
-	background-color:#FFF;
-	border:1px solid #707070;
-	border:none solid;
+	float:right;
 }
-.TopMenu li>a:hover
+.nav .nav-bd .h
 {
-	color:#F33;
-	text-decoration:underline;
-	font-size:1.2em;
+	color:#F22E00 !important;
 }
-.TopMenu li i
+.nav .nav-menu
 {
-	width:5px;
-	height:3px;
-	background:url(../icon/down.gif) left center no-repeat;
+	float:left;
+}
+.nav-menu-icon-shopcar
+{
+	background:url(../icon/ShopCar.gif) left center no-repeat;
 	display:inline-block;
-	margin:9px 3px ;
-	position:relative;
-	top:5px;
+	width:12px;
+	height:12px;
 }
-
-#ShopCar a
-{
-	padding-left:15px;
-	background:url(../icon/ShopCar.gif)left center no-repeat;
-}
-#ShopCar em{color:red; font-style:normal; font-weight:bold;}
-#Guide
-{
-	padding-left:7px;
-}
-
-#Guide>a
+.nav-menu-icon-guide
 {
 	background:url(../icon/Guide_1.jpg) left center no-repeat;
-	padding-left: 13px;
-}
-
-/*下拉菜单*/
-
-#Guide div
-{
-	position:absolute;
-	top:36px;
-	left:73px;
-	background-color:#FFF;
-	height:220px;
-	text-align:left;
-
-}
-
-#Guide div a
-{
-	color:#656565;
-}
-	
-#Guide div dl
-{
 	display:inline-block;
-	height:178px;
-	width:300px;
-	border-width:0 1px;
+	width:11px;
+	height:10px;
 }
-#Guide div dl dt
+.nav-menu-hd
 {
-	color:#F00;
-	font-family:"宋体", "微软雅黑", serif;
-	font-weight:bold;
-	font-size:1.2em;
+	position:relative;
+	z-index:1002;
+	padding:0 6px;
+	height:35px;
+	line-height:35px;
 }
-#Guide div dl dd a
+.nav-menu-hd a
 {
-	padding-right:10px;
+	float:left;
+	margin-right:7px;
+	color:#6C6c6c;
+}
+.nav-menu-hd a:hover
+{
+	color:#f40;
+}
+.nav-bd-r .nav-menu-hd:hover
+{
+  background:#FFF;
+}
+
+.nav-menu-hd i
+{
+  display:inline-block;
+  background:url(../icon/down.gif) left center no-repeat;
+  width:12px;
+  height:6px;
+  margin-top:16px;
+  overflow:hidden;
+}
+
+.nav-menu-bd
+{
+    z-index: 10001;
+    position: relative;
+    display: none;
+    margin-top: -1px;
+}
+.nav-menu:hover .nav-menu-bd{display:block;}
+.nav-menu-bd-panel
+{
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 8px 0;
+    line-height: normal;
+    border: 1px solid #EEE;
+    background: #FFF;
+}
+.nav-menu-bd-panel a
+{
+    display: block;
+    padding: 0 5px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #6C6C67;
+}
+.nav-menu-bd-panel a:hover
+{
+    color: #6C6C6C;
+    background: #F5F5F5;
+}
+.nav-menu-panel
+{
+    position:absolute;
+    right:0;
+    left:auto;
+    overflow:hidden;
+    min-height:258px;
+    line-height:normal;
+    border:1px solid #EEE;
+    background-color:#FFF; 
+}
+.nav-pipe
+{
+	float:left;
+	height:35px;
+	line-height:35px;
+	color:#DDD;
+}
+.nav-sitemenu-mod
+{
+    float:left;
+    width:25%;
+    overflow:hidden;
+}
+.nav-sitemenu-mod:nth-child(1) .nav-sitemenu-mod-wrap a:hover{background-color:#FA5603; color:#FFF;}
+.nav-sitemenu-mod:nth-child(2) .nav-sitemenu-mod-wrap a:hover{background-color:#A0B959; color:#FFF;}
+.nav-sitemenu-mod:nth-child(3) .nav-sitemenu-mod-wrap a:hover{background-color:#DF61AB; color:#FFF;}
+.nav-sitemenu-mod:nth-child(4) .nav-sitemenu-mod-wrap a:hover{background-color:#55A1E5; color:#FFF;}
+
+.nav-sitemenu-mod-wrap
+{
+    padding:5px;
+    border:1px solid #EEE;
+    overflow:hidden;
+}
+.nav-sitemenu-mod-hd h4
+{
+    margin:5px;
+    font-size:16px;
+    font-weight:600;
+    overflow:hidden;
+}
+.nav-sitemenu-mod-bd li
+{
+	float:left;
+	padding-top:5px;
+	width:30px;
+	height:25px;
+	overflow:hidden;
+}
+.nav-sitemenu-mod-bd a
+{
+	position:relative;
+	float:left;
+	height:25px;
+	line-height:25px;
+	margin:0 2px;
+	padding:0 8px;
+	border-radius:2px;
+}
+.nav-sitemenu-mod-bd .new
+{
+	background:url(../icon/new.gif) no-repeat;
+	position:absolute;
+	top:-5px;
+	right:0;
+	display:block;
+	height:14px;
+	width:9px;
+	overflow:hidden;
+}
+.nav-sitemenu-mod-bd .hot
+{
+	background:url(../icon/hot.gif) no-repeat;
+	position:absolute;
+	top:-5px;
+	right:0;
+	display:block;
+	height:14px;
+	width:9px;
+	overflow:hidden;
 }
