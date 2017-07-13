@@ -1,17 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-<<<<<<< HEAD
-.HeaderBar 
-{
-	height:36px;
-	line-height:36px;
-	background-color:#EFEFEF;
-	margin:0;
-	padding:0 80px;
-}
-=======
->>>>>>> refs/remotes/origin/restart
-
 /*nav*/
 .nav
 {
@@ -32,14 +19,7 @@
 {
 	float:left;
 }
-<<<<<<< HEAD
-.TopMenu li a
-{
-	display:inline-block;
-	
-}
-.TopMenu li a i
-=======
+
 .nav .nav-bd .nav-bd-r
 {
 	float:right;
@@ -53,13 +33,10 @@
 	float:left;
 }
 .nav-menu-icon-shopcar
->>>>>>> refs/remotes/origin/restart
 {
 	background:url(../icon/ShopCar.gif) left center no-repeat;
 	display:inline-block;
-<<<<<<< HEAD
-	margin:9px;
-=======
+	margin:9px
 	width:12px;
 	height:12px;
 }
@@ -72,29 +49,12 @@
 }
 .nav-menu-hd
 {
->>>>>>> refs/remotes/origin/restart
 	position:relative;
 	z-index:1002;
 	padding:0 6px;
 	height:35px;
 	line-height:35px;
 }
-<<<<<<< HEAD
-
-#ShopCar
-{
-	background:url(../icon/ShopCar.gif)left center no-repeat;
-}
-#ShopCar a{padding-left:9px;}
-#ShopCar em{color:red; font-style:normal; font-weight:bold;}
-#Guide_1 
-{
-	background:url(../icon/Guide_1.jpg) left center no-repeat;
-	overflow:hidden;
-	display:inline-block;
-	width:11px;
-	height:10px;
-=======
 .nav-menu-hd a
 {
 	float:left;
@@ -137,7 +97,6 @@
     line-height: normal;
     border: 1px solid #EEE;
     background: #FFF;
->>>>>>> refs/remotes/origin/restart
 }
 .nav-menu-bd-panel a
 {
@@ -181,10 +140,6 @@
 .nav-sitemenu-mod:nth-child(3) .nav-sitemenu-mod-wrap a:hover{background-color:#DF61AB; color:#FFF;}
 .nav-sitemenu-mod:nth-child(4) .nav-sitemenu-mod-wrap a:hover{background-color:#55A1E5; color:#FFF;}
 
-<<<<<<< HEAD
-	
-
-=======
 .nav-sitemenu-mod-wrap
 {
     padding:5px;
@@ -238,4 +193,3 @@
 	width:9px;
 	overflow:hidden;
 }
->>>>>>> refs/remotes/origin/restart
